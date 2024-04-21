@@ -28,3 +28,6 @@ URL "amqp://guest:guest@localhost:5672" yang sama pada program pelanggan menunju
 
 #### My screen showing the terminal publisher successfully running `cargo run` to send 5 events through the message broker, which will then be processed by the subscriber.
 ![alt text](assets/images/image3.png)
+
+#### My screen showing the RabbitMQ interface where there is a spike in message rates caused by repeatedly running the publisher program using `cargo run`
+![alt text](assets/images/image4.png)
