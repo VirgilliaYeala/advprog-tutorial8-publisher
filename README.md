@@ -31,3 +31,13 @@ URL "amqp://guest:guest@localhost:5672" yang sama pada program pelanggan menunju
 
 #### My screen showing the RabbitMQ interface where there is a spike in message rates caused by repeatedly running the publisher program using `cargo run`
 ![alt text](assets/images/image4.png)
+
+#### Improvement 
+
+Ada beberapa perbaikan yang bisa dilakukan pada kode ini:
+
+1. Saat ini, hasil dari publish_event diabaikan dengan _ =. Lebih baik menangani potensi kesalahan ini dengan benar.
+
+2. Metode publish_event dipanggil beberapa kali dengan argumen yang serupa. Ini bisa direfactor menjadi loop atau fungsi untuk mengurangi duplikasi kode.
+
+3. String koneksi dan nama event dikodekan secara langsung. Lebih baik memindahkan ini ke dalam file konfigurasi atau menggunakan environment variables.
