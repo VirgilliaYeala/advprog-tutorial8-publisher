@@ -19,3 +19,6 @@ program, what does it mean?
 Jawaban : 
 
 URL "amqp://guest:guest@localhost:5672" yang sama pada program pelanggan menunjukkan bahwa keduanya menggunakan konfigurasi yang sama untuk terhubung ke server AMQP. Ini berarti bahwa program penerbit dan program pelanggan akan terhubung ke server yang sama dengan menggunakan nama pengguna "guest", kata sandi "guest", dan alamat "localhost:5672". Dengan kata lain, keduanya akan berkomunikasi melalui broker pesan yang sama.
+
+### My screen when running RabbitMQ for the first time
+![alt text](assets/images/image1.png)
